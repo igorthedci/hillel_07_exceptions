@@ -1,7 +1,15 @@
+package task_01_zero;
+
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 import org.w3c.dom.ls.LSOutput;
 
-public class task_01_zero {
+/**
+ * 1. Create method to check:
+ * if number < 0 print “Number < 0”,
+ * if number > 0 print “Number > 0”
+ * if number = 0 throw your own exception
+ */
+public class Main {
     /**
      * 1. Create method to check:
      * if number < 0 print “Number < 0”,
@@ -25,7 +33,7 @@ public class task_01_zero {
             else if (number < 0)
                 System.out.println("Number(" + number + ") < 0");
             else
-                throw new Exception("Zero is catch");
+                throw new ZeroFoundException("Zero is catch");
         }
         catch (Exception eX) {
             System.out.println("Catch section: " + eX.getMessage());
@@ -34,5 +42,6 @@ public class task_01_zero {
             System.out.println("Here is the Finally section");
         }
     }
-
 }
+
+
