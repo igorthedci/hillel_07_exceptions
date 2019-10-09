@@ -1,8 +1,5 @@
 package task_01_zero;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-import org.w3c.dom.ls.LSOutput;
-
 /**
  * 1. Create method to check:
  * if number < 0 print “Number < 0”,
